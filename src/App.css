@@ -1,0 +1,38 @@
+.con {
+  display: flex;
+  
+
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust this according to your layout preference */
+}
+.on{
+  text-align: center;
+  margin: 1000px;
+}
+.d {
+  margin: 1rem;
+ 
+  margin-bottom: 20px; /* Adjust the margin between cards */
+  flex: 0 0 calc(20% - 20px); /* Adjust the width of each card */
+}
+
+.image{
+  height: 268.39px; 
+}
+
+.cart {
+  margin: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 992px) {
+  .d {
+    flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .d {
+    flex: 0 0 calc(100% - 20px); /* One card per row on small screens */
+  }
+}
