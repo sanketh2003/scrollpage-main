@@ -16,28 +16,101 @@ import Photographs from './pages/Photographs';
 import Preist from './pages/Preist';
 import Stalls from './pages/Stalls';
 import Vintagecars from './pages/Vintagecars';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Struct from './Info/Struct';
 
 
 function App() {
+  // const router=createBrowserRouter([
+  //   {path:'/',
+  //     element:<Venuesinfo/>
+
+  //   },
+
+  //   {
+  //     path:'/venues',
+  //     element:<Venues/>
+  //   },
+
+  //   {
+  //     path:'/Bridal',
+  //     element:<BridalMakeup/>
+  //   },
+
+  //   {
+  //     path:'/cake',
+  //     element:<Cake/> 
+  //   },
+
+  //   {
+  //     path:'/caterers',
+  //     element:<Caterers/>
+  //   },
+
+  //   {
+  //     path:'/Clothings',
+  //     element: <Clothings/>
+  //   },
+
+  //   {
+  //     path:'/Decoration',
+  //     element:<Decoration/>
+  //   },
+
+  //   {
+  //     path:'/Enetertainment',
+  //     element:<Entertainment/>,
+      
+  //   },
+
+  //   {
+  //     path:'/Funeral',
+  //     element:<Funeralservices/>
+  //   },
+
+  //   {
+  //     path:'/Jewellery',
+  //     element: <Jewellery/>
+  //   },
+
+  //   {
+  //     path:'/Lightings',
+  //     element:<Linghtings/>
+  //   },
+
+  //   {
+  //     path:'/Mehendi',
+  //     element: <Mehendi/>
+  //   },
+
+  //   {
+  //     path:'/Photograph',
+  //     element: <Photographs/>
+  //   },
+
+  //   {
+  //     path:'/Preist',
+  //     element:<Preist/>
+  //   },
+
+  //   {
+  //     path:'/Stalls',
+  //     element:<Stalls/>
+  //   },
+
+  //   {
+  //     path:'/Vintagecars',
+  //     element:<Vintagecars/> 
+  //   },
+
+    
+
+  // ])
   return (
     <div className="App">
-      <Venues/>
-      <BridalMakeup/>
-      <Cake/> 
-      <Caterers/>
-      <Clothings/>
-      <Decoration/>
-      <Entertainment/>
-      <Funeralservices/>
-      <Invitaioncards/>
-      <Jewellery/>
-      <Linghtings/>
-      <Mehendi/>
-      <Photographs/>
-      <Preist/>
-      <Stalls/>
-      <Vintagecars/>
       
+      {/* <RouterProvider router={router}/> */}
+      <Struct/>
       
     </div>
   );

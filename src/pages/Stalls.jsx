@@ -24,6 +24,7 @@ const Stalls = () => {
                     text1="234 Sweetness Avenue, Wedding Venue, Aroma Town"
                     src={require('../images/stalls/img7.jpg')} />
                 <PageScrollnfinite text="Lassi Lounge"
+                href="Info\h.json"
                     text1="678 Refreshment Road, Wedding Venue, Taste Town" src={require('../images/stalls/img8.jpg')} />
 
             </div>

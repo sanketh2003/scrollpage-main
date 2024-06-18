@@ -12,7 +12,7 @@ function PageScrollnfinite(props) {
           <Card.Text>
             {props.text1}
           </Card.Text>
-          <Button variant="primary"><b>Book It</b></Button>
+          <Button variant="primary" href={props.href}><b>Book It</b></Button>
         </Card.Body>
       </div>
 
