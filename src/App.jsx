@@ -18,6 +18,7 @@ import Stalls from './pages/Stalls';
 import Vintagecars from './pages/Vintagecars';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Struct from './Info/Struct';
+import Conf from './Info/Conf';
 
 
 function App() {
@@ -110,8 +111,8 @@ function App() {
     <div className="App">
       
       {/* <RouterProvider router={router}/> */}
-      <Struct/>
-      
+      {/* <Struct/> */}
+      <Conf/>
     </div>
   );
 }

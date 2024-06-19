@@ -1,20 +1,112 @@
-import { Image, Figure } from 'react-bootstrap';
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import {  MdOutlineReduceCapacity } from "react-icons/md"
+import { IoMdTime } from "react-icons/io";
+import { FaRegStar } from "react-icons/fa6";
+import { FaBed, FaWifi  } from "react-icons/fa";
+import { RiMoneyRupeeCircleFill } from "react-icons/ri";
+import { GiTakeMyMoney ,  GiWineBottle } from "react-icons/gi";
+import { FcElectricity,FcConferenceCall } from "react-icons/fc";
+import { TbAirConditioning } from "react-icons/tb";
+import { IoRestaurant } from "react-icons/io5";
 
-
-function FigureExample() {
+function WithHeaderExample() {
     return (
-        <Figure>
-            <Image style={{ borderRadius: "20px", marginTop: "20px", marginLeft: "20px" }} src={require('../images/stalls/img1.jpeg')} fluid />
+        <div>
+            <Card>
+            <Card.Header>
+                <h1>Overview</h1>
+            </Card.Header>
+            <Card.Body>
+                <div className="row">
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><MdOutlineReduceCapacity /> Seating Capacity  </h6>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><IoMdTime /> Timings </h6>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><FaRegStar />Working Since</h6>
+                        </div>
+                    </div>
+                    
+                </div><br/>
+                
+                <div className="row">
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><FaBed /> Rooms Available</h6>
+                        </div>
+                    </div>
+                    
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><RiMoneyRupeeCircleFill /> Average Room Price</h6>
+                        </div>
+                    </div>
 
-            <Figure.Caption style={{ margin: '1rem', textAlign: 'justify' }}>
-                <h1>About</h1>
-                {/* <p > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nulla vitae elit libero, a pharetra augue mollis interdum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum expedita dolores iure nihil totam ullam velit. Voluptatum repellat ipsum enim unde, vero quibusdam voluptates perspiciatis quam, tempore consequatur corrupti debitis nesciunt aliquam nisi pariatur excepturi. Quis velit non vitae voluptatum, culpa, autem molestiae voluptatibus officiis perferendis qui accusamus perspiciatis, nobis quibusdam. Ratione, quo numquam. Voluptas cum alias mollitia quo voluptatibus assumenda hic optio provident aperiam enim nihil commodi maxime non tempora ab accusamus quibusdam id voluptatum quas, inventore sunt odit unde. Quisquam laborum nemo illum ullam corrupti eius aperiam quibusdam laboriosam repudiandae corporis temporibus inventore, deserunt suscipit vel optio?
-        </p> */}
-                <div><span style={{marginLeft:'30px'}}>       Nulla </span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ullam numquam rerum, repellat ipsum deleniti ratione ducimus, quisquam ipsam quaerat amet? Accusantium vero iure, deserunt possimus facilis quibusdam dolore dolores consequuntur in culpa aliquid fugiat maiores repudiandae autem similique blanditiis.</div>
-            </Figure.Caption>
-        </Figure>
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><GiTakeMyMoney /> Average Price of Venue</h6>
+                        </div>
+                    </div>
+                </div>
+            </Card.Body>
+        </Card><br/><br/>
+
+        <Card>
+        <Card.Header>
+                <h1>Special Specifications</h1>
+            </Card.Header>
+            <Card.Body>
+                <div className="row">
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><FcElectricity />Electricity Backup</h6>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><TbAirConditioning /> Air-Conditioned</h6>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><IoRestaurant /> Restaurant</h6>
+                        </div>
+                    </div>
+                </div><br/>
+                
+                <div className="row">
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><GiWineBottle /> Bars</h6>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><FcConferenceCall /> Conference Center</h6>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="data-item">
+                            <h6><FaWifi /> Wifi</h6>
+                        </div>
+                    </div>
+                </div>
+            </Card.Body>
+
+        </Card>
+
+        </div>
+        
     );
 }
 
-export default FigureExample;
+export default WithHeaderExample;
